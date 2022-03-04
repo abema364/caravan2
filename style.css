@@ -1,44 +1,95 @@
-/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-header {
-  width: 90%; /* 横幅90% */
-  padding: 15px 0;
-  margin: 0 auto;
+.header {
+  width: 100%;
+  margin-bottom: 50px;
 }
 
-.main-visual {
-  width: 100%; /* 横幅いっぱい */
-  height: 300px; /* 高さ300px */
+.header .title {
+  font-size: 32px;
+  margin: 20px 0;
+  text-align: center;
 }
 
-.main-visual-content {
-  width: 350px; /* 横幅350px */
-  height: 300px; /* 親の高さに揃える */
+.header .nav {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.header .nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.header .nav ul li {
+  padding: 15px 20px;
 }
 
 .main {
-  width: 840px; /* 横幅840px */
-  display: flex; /* Flexboxの利用 */
-  justify-content: center; /* 子要素の横並び・中央寄せ */
-  margin: 0 auto; /* 中央寄せ（左右に余白がないとできない） */
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.blog {
-  width: 600px; /* 横幅600px */
-  height: 1400px; /* 高さ1400px */
+.main>div {
+  width: 200px;
+  height: 200px;
 }
 
-.sidebar {
-  width: 240px; /* 横幅240px */
-  height: 1400px; /* 高さ1400px */
+.item1 {
+  background-color: #e6ffe9;
+}
+.item2 {
+  background-color: #cbffd3;
+}
+.item3 {
+  background-color: #aeffbd;
+}
+.item4 {
+  background-color: #93ffab;
+}
+.item5 {
+  background-color: #f3ffd8;
+}
+.item6 {
+  background-color: #edffbe;
+}
+.item7 {
+  background-color: #e9ffa5;
+}
+.item8 {
+  background-color: #e4ff8d;
+}
+.item9 {
+  background-color: #d9e5ff;
+}
+.item10 {
+  background-color: #bad3ff;
+}
+.item11 {
+  background-color: #a4c6ff;
+}
+.item12 {
+  background-color: #8eb8ff;
 }
 
-footer {
-  width: 100%; /* 横幅いっぱい */
-  height: 120px; /* 高さ120px */
+
+
+.footer {
+  background-color: dimgray;
+  height: 120px;
+  text-align: center;
+}
+
+.footer p {
+  line-height: 120px;
+  color: #fff;
 }
